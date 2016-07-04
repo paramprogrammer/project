@@ -1,0 +1,38 @@
+Database vale chapter ch aajo
+Mongo vs sql samaj aa gaya c?
+hnji thoda thoda
+Shaina Sabarwal (iamshainasabarwal@gmail.com)
+ok dekho sade kol 2 tarah de database management system hunde
+SQL te NOSQL
+NOSQL stands for not only sql
+okay?
+jive relational database hunda
+ohde ch sql commands chaldiya na?
+hnji mam
+Shaina Sabarwal (iamshainasabarwal@gmail.com)
+hun meteor database use karda MongoDB
+jo ki NOSQL type da hai
+ok mam
+Shaina Sabarwal (iamshainasabarwal@gmail.com)
+eh relational nhi aa
+hnji mam 
+Shaina Sabarwal (iamshainasabarwal@gmail.com)
+document based aa
+ehde ch files hundiya
+and aapa'n data json format ch store karde aa
+for example
+{name: "shaina", age: "22"}
+ehda diya files ban jandiya
+jado v aapa'n database ch cheeza store karde aa'n
+aaya samaj?
+ok mam
+Shaina Sabarwal (iamshainasabarwal@gmail.com)
+hun dekho ehde table hai na ek paase sql aa ek paase mongo aa
+yellow color da
+ohde ch eh daseya c mongodb ch ki terms use hundiya
+hnji mam
+Shaina Sabarwal (iamshainasabarwal@gmail.com)
+jive table nu collections kende aa
+row nu document
+attribute nu field
+hun ek nava folder banao 'collections'

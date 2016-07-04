@@ -1,1 +1,0 @@
-new Mongo.Collection('players');

@@ -1,6 +1,5 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
-
 import './main.html';
 
 Template.hello.onCreated(function helloOnCreated() {
@@ -20,5 +19,23 @@ Template.hello.events({
     instance.counter.set(instance.counter.get() + 1);
   },
 });
-console.log("Hello world");
-Playerslist=new Mongo.Collection('new-players');
+ console.log("Hello world");
+ Template.leaderboard.helpers({
+    'player': function(){
+        return PlayersList.find();
+    }
+});
+Template.leaderboard.events({
+    'click .player': function(){
+    var playerId = "session value test";
+    Session.set('selectedPlayer', playerId);
+    var selectedPlayer = Session.get('selectedPlayer');
+    console.log(selectedPlayer);
+}
+});
+var selectedPlayer = Session.get('selectedPlayer');
+console.log(selectedPlayer);
+if(Meteor.isServer){
+    console.log("Hello server");
+}
+
