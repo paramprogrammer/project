@@ -33,9 +33,5 @@ Template.leaderboard.events({
     console.log(selectedPlayer);
 }
 });
-var selectedPlayer = Session.get('selectedPlayer');
-console.log(selectedPlayer);
-if(Meteor.isServer){
-    console.log("Hello server");
-}
+
 
