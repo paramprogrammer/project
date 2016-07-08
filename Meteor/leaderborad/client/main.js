@@ -64,23 +64,22 @@ Template.leaderboard.events({
 
 Template.addPlayerForm.events({
     'submit form': function(event){
-          event.preventDefault();
-      var playerNameVar = event.target.playerName.value;
-    var currentUserId = Meteor.userId();
-  PlayersList.insert({
-        name: playerNameVar,
-        score: 0,
- createdBy: currentUserId
-
-    });
- event.target.playerName.value = "";
+    event.preventDefault();
+    var playerNameVar = event.target.playerName.value;
+    Meteor.call('createPlayer');
+    event.target.playerName.value = "";
 }
 
 });
-if(Meteor.isCleint){
-Meteor.publish('thePlayers', function(){
-    var currentUserId = this.userId;
-    return PlayersList.find({ createdBy: currentUserId });
+
+Meteor.methods({
+    'createPlayer': function(){
+        var currentUserId = Meteor.userId();
+        PlayersList.insert({
+            name: "David",
+            score: 0,
+            createdBy: currentUserId
+        });
+    }
 });
-}
 
